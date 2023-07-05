@@ -1,0 +1,270 @@
+
+.ps-banner{
+	width: 100%;
+	height: 100vh;
+	background: url(images/prophetic-school/banner.png) right no-repeat;
+	background-size: contain;
+	background-attachment: fixed;
+	display: flex;
+}
+
+.ps-banner2{
+	text-align: left;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	position: absolute;
+	display: flex;
+/*	background: red;*/
+}
+
+.ps-text{
+	display: inline-block;
+	align-self: flex-end;
+	padding: 10% 15%;
+	padding-right: 5%;
+	border-left: 10px solid #2e2824;
+	max-width: 600px;
+}
+
+.ps-text img{
+	width: 70vw;
+	max-width: 600px;
+}
+
+.ps-text1{
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.ps-register{
+	display: inline-block;
+	font-weight: 700;
+	border-radius: 5px;
+	background: rgb(255, 255, 255, 1);
+	padding: 10px 15px;
+	color: #000;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.ps-register:hover{
+	background: rgb(255, 255, 255, 0.1);
+	color: #fff;
+}
+
+
+.ps-what-is{
+	display: inline-block;
+	font-weight: 300;
+/*	border-radius: 5px;*/
+/*	background: rgb(255, 255, 255, 1);*/
+	padding: 10px 15px;
+	color: #fff;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.ps-register:hover{
+	background: rgb(255, 255, 255, 0.1);
+	color: #fff;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+.ps-text{
+	padding-bottom: 10%;
+	padding-left: 10%;
+	border: 0;
+}
+
+.ps-text1{
+	font-size: 14px;
+}
+
+
+}
+
+
+/*SECTION 2*/
+
+.ps2-pad{
+	padding: 10%;
+}
+
+.ps2-flex{
+	display: flex;
+}
+
+.ps2-left{
+	width: 40%;
+	margin: 10px;
+	margin-right: 50px;
+}
+
+.ps2-title{
+	font-family: 'Bebas Neue', sans-serif;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+.ps2-content{
+	font-weight: 300;
+	line-height: 1.5em;
+	font-size: 16px;
+}
+
+.ps2-right{
+	width: 60%;
+	display: flex;
+}
+
+.ps2-v{
+	width: 20%;
+/*	height: 80vh;*/
+	background: linear-gradient(0deg, #fad126 0%, #ff544f 100%);
+	border-bottom: 10px solid #5d0d00;
+	margin: 5px;
+	color: black;
+	transition: 0.5s;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.ps2-v2{
+	background: linear-gradient(0deg, #fad126 25%, #ff544f 100%);
+}
+
+.ps2-v3{
+	background: linear-gradient(0deg, #fad126 40%, #ff544f 100%);
+}
+
+.ps2-v:hover{
+/*	width: 30%;
+	border-bottom: 50px solid #5d0d00;*/
+	opacity: 1;
+}
+.ps2-v:hover .ps2-v-bottom{
+/*	margin-top: calc(50vh - 30px);*/
+}
+
+.ps2-v-price{
+	text-align: right;
+	padding: 10px;
+	font-size: 20px;
+	font-family: 'Bebas Neue', sans-serif;
+	font-weight: 700;
+	height: 40px;
+}
+
+.ps2-v-bottom{
+	margin-top: 45vh;
+	transition:0.3s;
+	text-align: center;
+	padding: 20px 10px;
+}
+.ps2-v-bottom img{
+	width: 70%;
+}
+.ps2-v-bottom div{
+	font-family: 'Times New Roman';
+	font-size: 50px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+.ps2-pad{
+	padding: 5%;
+	padding-top: 60px;
+}
+
+.ps2-flex{
+	display: block;
+}
+
+.ps2-left, .ps2-right{
+	width: 100%;
+	margin-top: 40px;
+}
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+.ps2-right{
+	display: block;
+}
+.ps2-v{
+	width: auto;
+	padding: 10px;
+/*	height: 100px;*/
+	border: 0;
+	transition: 0.1s;
+/*	border-left: 10px solid #5d0d00;*/
+	background: linear-gradient(90deg, #ff544f 0%, #fad126 100%);
+}
+
+.ps2-v2{
+	background: linear-gradient(90deg, #ff544f 25%, #fad126 100%);
+}
+
+.ps2-v3{
+	background: linear-gradient(90deg, #ff544f 40%, #fad126 100%);
+}
+
+.ps2-v:hover{
+	padding: 10px;
+	margin: 0;
+	border:0;
+	width: auto;
+	opacity: 1;
+/*	border-bottom:0;*/
+/*	border-left: 10px solid #5d0d00;*/
+}
+
+.ps2-v-price{
+	float: right;
+	padding: 10px;
+	font-size: 14px;
+}
+
+.ps2-v-bottom{
+	margin: 0;
+	padding-left: 10px;
+	display: flex;
+	width: 50%;
+	padding: 5px;
+/*	align-content: center;*/
+}
+
+
+.ps2-v:hover .ps2-v-bottom{
+	margin:0;
+	padding: 0;
+	padding-left: 20px;
+/*	height: 0;*/
+	background: rgb(0, 0, 0, 0.05);
+}
+
+.ps2-v-bottom img{
+	width: 40px;
+	height: 30px;
+	margin-top: 15px;
+	margin-right: 20px;
+}
+
+.ps2-v-bottom div{
+	font-family: 'Times New Roman';
+	font-size: 50px;
+}
+
+
+}
+
