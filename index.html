@@ -104,12 +104,15 @@
 			<a href="#"><i class='bx bxl-facebook'></i></a>
 			</div>
 
+			<a href="https://www.youtube.com/watch?v=I6CI_9zIovc&ab_channel=ProphetLovy" onclick="pager('https://www.youtube.com/watch?v=I6CI_9zIovc&ab_channel=ProphetLovy')">
 			<div class="sec1-screen">
 				<video class="video1" preload="" autoplay="" muted="" playsinline="" loop="" poster="assets/images/thumb1.jpg" src="" id="video1">
 					<!-- <source id="video1" type="video/mp4"> -->
 				</video> 
 				<img src="assets/images/revealed/play.png" class="sec1-play">
 			</div>
+			</a>
+
 			<script type="text/javascript">
 			document.addEventListener('DOMContentLoaded', function() {
 			  var video = document.getElementById('video1'); // Replace 'myVideo' with the ID of your video element
@@ -243,7 +246,7 @@
 			<div class="rev-carousel-shift">
 
 				<div class="glide">
-				  <div class="glide__track" id="glide__track" data-glide-el="track">
+				  <div class="glide__track glide-track" id="glide__track" data-glide-el="track">
 				    <div class="glide__slides">
 
 				      <div class="glide__slide">
@@ -315,48 +318,83 @@
 
 		<div class="por-title">PORTALS</div>
 
-		<div class="por-container">
 		<div class="por-scroll">
 
 
-			<a target="_blank" onclick="pager('https://www.instagram.com/p/CuDyEa3MImU/')" href="https://www.instagram.com/p/CuDyEa3MImU/">
-				<div class="portal" style="background:url(assets/images/portals/fast2.jpg) center no-repeat;background-size: cover;">
-					<div class="portal-black">
-						<div>30 days of Victory - Prayer and Fasting</div>
-					</div>
-				</div>
-			</a>
+				<div class="glide2">
 
-			<a target="_blank" onclick="pager('https://www.youtube.com/watch?v=MwOdVgPruEY')" href="https://www.youtube.com/watch?v=MwOdVgPruEY">
-				<div class="portal">
-					<video class="video2" preload="" autoplay="" muted="" playsinline="" loop="" src="assets/videos/hthfg.mp4">
-					</video> 
-					<div class="portal-black">
-						<div>HTHFG series</div>
-					</div>
-				</div>
-			</a>
-			
+				  <div class="glide__track" id="glide__track" data-glide-el="track">
+				    <div class="glide__slides">
 
-			<a onclick="pager('prophetic-school.html')">
-				<div class="portal" style="background:url(assets/images/portals/prophetic-school.jpg) center no-repeat;background-size: cover;">
-					<div class="portal-black">
-						<div>Prophetic School 6.0</div>
-					</div>
-				</div>
-			</a>
-			
+				      <div class="glide__slide">
+						<a target="_blank" onclick="pager('https://www.instagram.com/p/CuDyEa3MImU/')" href="https://www.instagram.com/p/CuDyEa3MImU/">
+							<div class="portal" style="background:#e04436 url(assets/images/portals/fast2.jpg) center no-repeat;background-size: cover;">
+								<div class="portal-black">
+									<div>30 days of Victory - Prayer and Fasting</div>
+								</div>
+							</div>
+						</a>
+				      </div>
+					<!--  -->
+				      <div class="glide__slide">
+						<a target="_blank" onclick="pager('https://www.youtube.com/watch?v=MwOdVgPruEY')" href="https://www.youtube.com/watch?v=MwOdVgPruEY">
+							<div class="portal">
+								<video class="video2" preload="" autoplay="" muted="" playsinline="" loop="" src="assets/videos/hthfg.mp4">
+								</video> 
+								<div class="portal-black">
+									<div>HTHFG series</div>
+								</div>
+							</div>
+						</a>
+				      </div>
+					<!--  -->
+				      <div class="glide__slide">
+						<a onclick="pager('prophetic-school.html')">
+							<div class="portal" style="background:#e04436 url(assets/images/portals/prophetic-school.jpg) center no-repeat;background-size: cover;">
+								<div class="portal-black">
+									<div>Prophetic School 6.0</div>
+								</div>
+							</div>
+						</a>
+				      </div>
+					<!--  -->
+				      <div class="glide__slide">
+						<a target="_blank" onclick="pager('https://www.revelationchurchla.org/revelation-nights')" href="https://www.revelationchurchla.org/revelation-nights">
+							<div class="portal" style="background:#e04436 url(assets/images/portals/houston.jpg) center no-repeat;background-size: cover;">
+								<div class="portal-black">
+									<div>Become a Partner</div>
+								</div>
+							</div>
+						</a>
+				      </div>
 
-			<a target="_blank" onclick="pager('https://www.revelationchurchla.org/revelation-nights')" href="https://www.revelationchurchla.org/revelation-nights">
-				<div class="portal" style="background:url(assets/images/portals/houston.jpg) center no-repeat;background-size: cover;">
-					<div class="portal-black">
-						<div>Become a Partner</div>
-					</div>
-				</div>
-			</a>
+				    </div>
+				  </div>
+
+			</div>	
 
 
-		</div>
+		<script>
+
+			var perView = 4;
+			if (window.innerWidth>800) {
+				perView = 4;
+			}else if(window.innerWidth>600){
+				perView = 3;
+			}else{
+				perView = 2;
+			}
+
+			var glide = new Glide('.glide2', {
+			  perView: perView,
+			  gap:0
+			});
+
+			glide.mount();
+
+		</script>
+
+
 		</div>
 
 		<br>
@@ -400,7 +438,7 @@
 					<div class="foo-col-title">MORE</div>
 
 					<a href="donate.html" onclick="pager('donate.html')"><div class="foo-col-link">Donate</div></a>
-					<a href="#"><div class="foo-col-link">Prophetess Maggie Elias</div></a>
+					<a href="maggie/index.html" onclick="pager('maggie/index.html')"><div class="foo-col-link">Prophetess Maggie Elias</div></a>
 					<a href="https://www.revelationchurchla.org/" onclick="pager('https://www.revelationchurchla.org/')"><div class="foo-col-link">Revelation Church</div></a>
 					<a href="#"><div class="foo-col-link">Revelation Music</div></a>
 					<a href="powershot.html" onclick="pager('powershot.html')"><div class="foo-col-link">Powershot</div></a>
